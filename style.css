@@ -1,0 +1,28 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    z-index: -1;
+    position: relative;
+
+    background: no-repeat center center; /* Fixed */
+    background-size: cover;
+    background-image: url("https://cafemilanoglasgow.co.uk/wp-content/uploads/2019/06/DSC_0014-768x512.jpg");
+}
+
+main::after {
+    content: "";
+    
+    z-index: -1;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-family: "Playfair Display SC", serif;
+}
